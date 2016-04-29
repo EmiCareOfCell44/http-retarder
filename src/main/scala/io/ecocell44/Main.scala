@@ -10,7 +10,7 @@ import scala.concurrent.{ Await, Future }
 
 class Main {
   
-  implicit val system = ActorSystem("settlements")
+  implicit val system = ActorSystem("retarder")
   implicit val flowMaterializer = ActorMaterializer()
   
   val ref = system.actorOf(Props[RetarderActor])
